@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+    android:id="@+id/myrelative"
+android:layout_height="wrap_content"
+android:minHeight="50dp"
+android:orientation="horizontal"
+android:padding="5dip" >
+
+    <ImageView
+        android:id="@+id/data_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="log level indicator"
+        android:src="@drawable/critical"
+        />
+
+<TextView
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/data_image"
+    android:textSize="16sp"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:text="@string/remark"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/remarktextView"
+    android:textColor="@android:color/black"
+    android:textStyle="bold"
+    android:typeface="sans" />
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dip"
+    android:layout_marginLeft="10dp"
+    android:layout_below="@id/remarktextView"
+    android:layout_toRightOf="@+id/data_image"
+    android:text="@string/data"
+    android:id="@+id/datatextView"
+    android:textColor="@android:color/black"
+    android:textSize="13sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chidoke.h2omonitor.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonsLayout"/>
+
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_tab_home"
+            android:background="@null"/>
+        <View
+            android:layout_width="0.1dip"
+            android:layout_height="match_parent"
+            android:background="#111"/>
+
+        <Button
+            android:id="@+id/notiBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_notifications_white_24dp"
+            android:background="@null"/>
+    </LinearLayout>
+
+</RelativeLayout>

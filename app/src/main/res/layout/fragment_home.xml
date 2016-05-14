@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.chidoke.h2omonitor.HomeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.19">
+
+            <ImageView
+                android:id="@+id/imagewaterlevel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="center"
+                android:src="@drawable/highmed"
+                android:layout_centerInParent="true"
+                android:contentDescription="water level"
+                android:layout_weight="0.19" />
+
+            <TextView
+                android:id="@+id/waterpercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="80sp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

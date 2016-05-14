@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">H2oMonitor</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rank">Rank is critically low</string>
+    <string name="percentage">8% remaining</string>
+    <string name="remark">Water level is normal</string>
+    <string name="data">50% remaining</string>
+</resources>
